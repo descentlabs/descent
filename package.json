@@ -1,0 +1,28 @@
+{
+    "name": "descent",
+    "private": true,
+    "workspaces": [
+        "packages/*",
+        "apps/*"
+    ],
+    "scripts": {
+        "build": "turbo build",
+        "clean": "git clean -xdf node_modules",
+        "clean:workspaces": "turbo clean",
+        "dev": "turbo dev --parallel",
+        "test": "turbo test --parallel",
+        "start:dashboard": "turbo start --filter=@descent/dashboard",
+        "dev:api": "turbo dev --filter=@descent/api",
+        "dev:dashboard": "turbo dev --filter=@descent/dashboard",
+        "build:dashboard": "turbo build --filter=@descent/dashboard",
+        "format": "turbo format",
+        "lint": "turbo lint",
+        "typecheck": "turbo typecheck"
+    },
+    "dependencies": {
+        "@biomejs/biome": "2.1.1",
+        "turbo": "^2.5.4",
+        "typescript": "^5.8.3"
+    },
+    "packageManager": "bun@1.2.18"
+}
