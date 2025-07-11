@@ -17,6 +17,12 @@
             ],
             "outputs": []
         },
+        "format": {
+            "dependsOn": [
+                "^format"
+            ],
+            "outputs": []
+        },
         "check-types": {
             "dependsOn": [
                 "^check-types"
