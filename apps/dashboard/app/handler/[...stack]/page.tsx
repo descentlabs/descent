@@ -1,6 +1,6 @@
-import { StackHandler } from "@stackframe/stack";
-import { stackServerApp } from "../../../stack";
-import { notFound } from "next/navigation";
+import { StackHandler } from '@stackframe/stack';
+import { stackServerApp } from '../../../stack';
+import { notFound } from 'next/navigation';
 
 export default function Handler(props: any) {
     const { params } = props;
